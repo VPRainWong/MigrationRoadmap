@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.migrationroadmap"
+		name="Migration Roadmap Diagram"
+		description="Migration Roadmap Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.migrationroadmap.MigrationRoadMapPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.migrationroadmap.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.migrationroadmap.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.migrationroadmap.actionset1.MigrationRoadMapAction"
+					actionType="generalAction"
+      		name="Migration Roadmap Diagram"
+		      description="Migration Roadmap Diagram"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="Migration Roadmap Diagram"
+					toolbarPath="com.vp.plugin.sample.migrationroadmap.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.migrationroadmap.actions.MigrationRoadMapActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
